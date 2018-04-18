@@ -29,7 +29,9 @@
         <service
             android:name=".service.ListenPay"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+        <activity android:name=".check.CheckActivity"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
 package com.example.quang.appordercoffeestaff.request.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import com.example.quang.appordercoffeestaff.R
+import com.example.quang.appordercoffeestaff.check.CheckActivity
 import com.example.quang.appordercoffeestaff.model.Request
 import com.google.firebase.database.FirebaseDatabase
 
@@ -31,6 +33,12 @@ class RequestAdapter(private var context: Context,private val requestList:List<R
 
             request.status = "true"
             FirebaseDatabase.getInstance().getReference("Request").child(request.table).setValue(request)
+        }
+
+        holder.check.setOnClickListener {
+                val intent = Intent(context.applicationContext,CheckActivity::class.java)
+                intent.putExtra("Check",request)
+                context.startActivity(intent)
         }
 
 

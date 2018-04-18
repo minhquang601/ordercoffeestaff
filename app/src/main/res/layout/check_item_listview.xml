@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Name : "
+        android:textColor="#f000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/txtName_Item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/empty"
+        android:text="ABC"
+        android:textColor="#f000"
+        android:textSize="20sp" />
+     <TextView
+         android:layout_below="@id/empty"
+        android:id="@+id/empty1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Price : "
+        android:textColor="#f000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_below="@+id/txtName_Item"
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/empty"
+        android:text="12"
+        android:textColor="#f000"
+        android:textSize="20sp" />
+      <TextView
+         android:layout_below="@id/empty1"
+        android:id="@+id/empty2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Amount : "
+        android:textColor="#f000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_below="@+id/txtPrice"
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/empty2"
+        android:text="12"
+        android:textColor="#f000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

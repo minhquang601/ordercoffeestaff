@@ -53,6 +53,7 @@ class ListenPay : Service(),ChildEventListener {
                 .setContentIntent(pendingIntent)
 
         val manager= baseContext.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+
         //many notidication show,need give unique ID  for each Notification
         val randomId = Random().nextInt(9999-1)+1
         manager.notify(randomId,builder.build())
